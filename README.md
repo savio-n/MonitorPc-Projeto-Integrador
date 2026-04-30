@@ -14,7 +14,7 @@ Projeto desenvolvido para o CEUB – Ciência de Dados e Machine Learning.
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/EduardoFleming/MonitorPc-Projeto-Integrador.git
+git clone https://github.com/savio-n/MonitorPc-Projeto-Integrador.git
 cd MonitorPc-Projeto-Integrador
 ````
 
