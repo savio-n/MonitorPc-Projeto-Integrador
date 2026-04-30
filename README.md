@@ -1,67 +1,126 @@
-# 🖥️ Monitor PC & AI Tech
+Aqui está um `README.md` pronto, bem organizado e direto pra seu projeto:
 
-> **Monitoramento de Hardware Inteligente com Diagnóstico via Inteligência Artificial**
+````md
+# 🖥️ HardwareAnalysis
 
-O **Monitor PC** é uma ferramenta de diagnóstico que une a coleta de dados de hardware em tempo real com a inteligência do Google Gemini. Ele não apenas exibe suas especificações, mas atua como um consultor técnico que analisa o equilíbrio do seu setup para o seu perfil de uso.
+Sistema inteligente de análise de hardware com IA para identificação de gargalos e recomendação de upgrades.
 
----
-
-## 🚀 Funcionalidades
-
-- **📈 Monitoramento em Tempo Real:** Acompanhamento dinâmico de uso de CPU, RAM e GPU (NVIDIA), incluindo temperaturas.
-- **📊 Specs Detalhadas:** Identificação precisa de Processador, Placa-Mãe (incluindo modelos OEM como HP/Dell), GPU e Armazenamento.
-- **🧠 Consultor IA (Gemini):**
-  - Análise personalizada baseada no seu objetivo (Jogos, Trabalho ou Uso Doméstico).
-  - Identificação de gargalos técnicos reais.
-  - Tabela de recomendações com links diretos para pesquisa de preços no Google Shopping.
-- **🖼️ Interface Nativa:** Roda como um aplicativo de desktop em uma janela dedicada para melhor experiência do usuário.
+Projeto desenvolvido para o CEUB – Ciência de Dados e Machine Learning.
 
 ---
 
-## 🛠️ Requisitos e Compatibilidade
+## 🚀 Como executar o projeto
 
-Para garantir o funcionamento perfeito, verifique os requisitos:
+### 1. Clonar o repositório
 
-1. **Sistema Operacional:** Windows 10 ou 11 (devido ao uso de bibliotecas `wmi` e `pywin32`).
-2. **Hardware NVIDIA:** O monitoramento de temperatura e carga de GPU é exclusivo para placas NVIDIA (via `pynvml`).
-3. **Versão do Python:** - ✅ Recomendado: **Python 3.12**
-   - ⚠️ **Atenção:** Pode haver incompatibilidades com versões muito recentes como o Python 3.14 devido a bibliotecas gráficas.
+```bash
+git clone https://github.com/EduardoFleming/MonitorPc-Projeto-Integrador.git
+cd MonitorPc-Projeto-Integrador
+````
 
----
+Rode o .exe em dist/launcher.exe e o app abrirá no seu navegador principal.
 
-## ⚙️ Como Usar (Passo a Passo)
 
-### 1. Obtenha sua API Key do Gemini
-O projeto utiliza a inteligência do Google para realizar as análises.
-1. Acesse o [Google AI Studio](https://aistudio.google.com/app/apikey).
-2. Clique no botão **"Create API key"**.
-3. Copie a chave gerada (um código longo que começa com `AIza...`).
 
-### 2. Execução do Aplicativo
-Você não precisa instalar bibliotecas manualmente; o inicializador faz o trabalho duro.
-1. Baixe os arquivos do repositório para uma pasta no seu computador.
-2. Abra o **Terminal** (ou PowerShell) dentro dessa pasta. No VS Code, você pode usar o atalho `Ctrl + '`.
-3. Digite o comando abaixo e **pressione a tecla Enter**:
-   `python app.py`
-4. Aguarde alguns segundos. O sistema verificará as dependências e abrirá a janela do aplicativo automaticamente.
 
-### 3. Configuração da Chave e Análise
-Com a janela do **Monitor PC** aberta:
-1. No canto esquerdo, localize o menu cinza (a **Barra Lateral**).
-2. Clique no campo **"🔑 API Key do Gemini"**.
-3. Cole a sua chave (Ctrl + V) e **pressione a tecla Enter** no teclado para confirmar.
-4. Agora, navegue até a aba **"🧠 Consultor IA"**, selecione seu perfil e clique no botão azul **"🔍 Analisar Agora"**.
+
+
+
+
+
+
+
+## 🧠 O que o sistema faz
+
+* Analisa CPU, GPU, RAM e armazenamento
+* Detecta gargalos de desempenho
+* Sugere upgrades de hardware
+* Classifica uso (Jogos, Trabalho, IA, Escritório)
+* Gera recomendações baseadas em IA
 
 ---
 
-## 👨‍💻 Tecnologias Utilizadas
+## 🖥️ Versão Desktop (.exe)
 
-- **Interface:** Streamlit & PyWebview.
-- **IA:** Google Generative AI (Gemini Flash 3.0).
-- **Monitoramento:** Psutil, WMI e PyNVML.
+O projeto também possui versão executável:
+
+📂 Local:
+
+```
+dist/launcher.exe
+```
+
+### Como usar:
+
+1. Baixe o repositório
+2. Abra a pasta `dist`
+3. Execute:
+
+```bash
+launcher.exe
+```
 
 ---
 
-## 📝 Notas de Versão
-- **v1.0:** Lançamento inicial com interface em abas, monitoramento estável e integração com Gemini.
-- **Correção de Portas:** Implementada alocação dinâmica de portas para evitar conflitos ao abrir o app.
+## ⚙️ Tecnologias usadas
+
+* Python
+* Streamlit
+* PyWebView
+* Pandas
+* Google Generative AI
+* Electron (launcher desktop)
+* PyInstaller (build .exe)
+
+---
+
+## 📊 Estrutura do projeto
+
+```
+MonitorPc-Projeto-Integrador/
+│
+├── main.py
+├── aiAnalysis.py
+├── hardwareMonitoring.py
+├── hardwareInfo.py
+├── requirements.txt
+│
+├── dist/
+│   └── launcher.exe
+│
+├── electron/
+│   ├── main.js
+│   ├── loading.html
+│   └── package.json
+```
+
+---
+
+## ⚠️ Observações
+
+* O `.exe` pode demorar alguns segundos para iniciar
+* Necessário Python instalado (caso não use o .exe)
+* Dependências são instaladas automaticamente via `requirements.txt`
+
+---
+
+## 👨‍💻 Autores
+
+* Eduardo Fleming Diniz
+* Miguel Ribeiro Gomes Allievi
+* Pedro Vargas dos Santos e Silva
+* Sávio Arbuês Abrahão Nery
+
+---
+
+## 📌 Licença
+
+Projeto acadêmico – CEUB 2026
+
+```
+
+Se quiser, posso também:
+- :contentReference[oaicite:0]{index=0}
+- :contentReference[oaicite:1]{index=1}
+- ou :contentReference[oaicite:2]{index=2}
+```
