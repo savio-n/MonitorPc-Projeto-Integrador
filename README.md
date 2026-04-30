@@ -118,8 +118,3 @@ Projeto acadêmico – CEUB 2026
 
 ```
 
-Se quiser, posso também:
-- :contentReference[oaicite:0]{index=0}
-- :contentReference[oaicite:1]{index=1}
-- ou :contentReference[oaicite:2]{index=2}
-```
