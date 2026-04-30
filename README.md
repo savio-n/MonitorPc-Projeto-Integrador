@@ -1,6 +1,3 @@
-Aqui está um `README.md` pronto, bem organizado e direto pra seu projeto:
-
-````md
 # 🖥️ HardwareAnalysis
 
 Sistema inteligente de análise de hardware com IA para identificação de gargalos e recomendação de upgrades.
@@ -16,6 +13,8 @@ Projeto desenvolvido para o CEUB – Ciência de Dados e Machine Learning.
 ```bash
 git clone https://github.com/savio-n/MonitorPc-Projeto-Integrador.git
 cd MonitorPc-Projeto-Integrador
+
+dist/launcher.exe
 ````
 
 Rode o .exe em dist/launcher.exe e o app abrirá no seu navegador principal.
