@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# Build
+build/
+dist/
+
+# Electron
+electron/node_modules/
+electron/dist/
+
+# PyInstaller
+*.spec
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Large files
+*.zip
+*.exe
+*.whl

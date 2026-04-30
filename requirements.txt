@@ -1,0 +1,7 @@
+streamlit
+pywebview
+psutil
+pandas
+plotly
+wmi
+google-generativeai
